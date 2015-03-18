@@ -2,10 +2,17 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/css/style.css' />
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <p>上传demo与开发版地址去对比</p>
+    <form name="compare" action="/compare">
+      <ul class="wrapper">
+        <li><input type="url" name="geturl" ></li>
+        <li><input type="file" name="demo" ></li>
+        <li><button type="submit">进行对比</button></li>
+      </ul>
+    </form>
   </body>
 </html>
